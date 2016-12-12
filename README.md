@@ -25,3 +25,11 @@ consola->conky
 
 #Para modificar la vista del conky.
 Modificar el archivo .conkyrc, agregando o quitando contenido. 
+
+La Temperatura esta en Celsius y es la de Argentina Buenos Aires.
+
+#Para modificar buscar woeid de tu ciudad aqui:
+
+http://woeid.rosselliot.co.nz/
+
+y modificar el .conkyrc en la parte de weather

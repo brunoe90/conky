@@ -111,7 +111,7 @@ ${goto 40}${diskiograph 26,190 08088A 58FAF4 -l}
 ${goto 40}Disk I/O:${alignr 39}${diskio}
 #${hr 1}
 \
-# Network
+# Network Not Working depends on your Hardware
 \
 #${if_existing /proc/net/route wlan0}
 #${goto 40}${upspeedgraph wlan0 26,80 FFFFFF FFFFFF}${goto 150}${downspeedgraph wlan0 26,80 FFFFFF FFFFFF}
@@ -142,7 +142,7 @@ ${goto 40}${color2}${top_mem name 5}${alignr 86}${top_mem pid 5}${color}${alignr
 #${goto 40}${color2}${top_mem name 3}${alignr 76}${top_mem pid 3}${color}${alignr 39}${top cpu 3} %
 #${hr 1}
 \
-# System shortcuts
+# System shortcuts No lo utilizo.
 #${font Noto Sans :size=8}
 #${goto 40}Ctrl+Alt+T${alignr 26}Terminal
 #${goto 40}cmd+Z${alignr 42}Inicio
@@ -151,17 +151,21 @@ ${goto 40}${color2}${top_mem name 5}${alignr 86}${top_mem pid 5}${color}${alignr
 #${goto 40}C-W-F4${alignr 40}Log off
 \
 #Esto nos muestra los dos procesadores y una barra de cada uno de ellos con su uso
+\
 ${font Noto Sans:style=bold:size=10}${color4}Procesadores${color}$hr
 ${font Noto Sans:style=normal:size=8}\
 CPU1: ${cpu cpu1}% ${cpubar cpu1}
 CPU2: ${cpu cpu2}% ${cpubar cpu2}
 CPU3: ${cpu cpu3}% ${cpubar cpu3}
 CPU4: ${cpu cpu4}% ${cpubar cpu4}
-#Esto nos muestra la temperatura de los procesadores
+\
+#Temperatura de los procesadores
+\
 #${font Noto Sans:style=bold:size=10}Temperatura $hr
 ${font Noto Sans:style=bold:size=8}Temperatura: $alignr ${acpitemp} °C${font}
 \
-#Esto nos muestra la particion Home, la RAM y la sawp con una barra cada una y sus datos
+#Particion Home, la RAM y la swap con una barra cada una y sus datos
+\
 ${font Noto Sans:style=bold:size=10}${color4}Memoria y discos${color}$hr
 ${font Noto Sans:style=bold:size=8}HOME $alignr ${fs_used /home} / ${fs_size /home}
 ${fs_bar /home}
