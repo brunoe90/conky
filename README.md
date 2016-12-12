@@ -1,18 +1,27 @@
 # conky
 conky configuration example weather
 
-# Instalaćion
-en consola->
-sudo aptitude install conky-all
+# Instalación del conky
+
+	#Para cualquier distro común de linux
+
+	en consola->sudo aptitude install conky-all
+
+	#Para el resto
+	(...)
 
 #agregar archivos de configuración:
 
-Copiar el contenido de la carpeta .conky y el archivo .conkyrc a la carpeta /home/[user]/. 
+Copiar el contenido de la carpeta .conky y el archivo .conkyrc a la carpeta /home/[user]/ 
 (Son archivos ocultos)
+	en consola->
+		cp -r conky/.conky /home/[user]/
+	en consola->
+		cp -r conky/.conkyrc /home/[user]/
 
 #Correr el conky
 
-consola-> conky
+consola->conky
 
 #Para modificar la vista del conky.
-Modificar el archivo .conkyrc. Agregando o quitando contenido. 
+Modificar el archivo .conkyrc, agregando o quitando contenido. 
